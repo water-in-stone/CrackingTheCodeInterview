@@ -30,7 +30,7 @@ hs_err_pid*
 .idea/.name
 .idea/copyright
 .idea
-
+code.iml
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids

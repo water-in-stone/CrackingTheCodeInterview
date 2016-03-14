@@ -6,19 +6,28 @@ import java.util.Scanner;
 
 public class String_1_7 {
     public static int[][] clearZero(int[][] mat, int n) {
+        //引入一个相同大小的标记矩阵来进行清零的操作
+        int[][] matFlag = new int[mat.length][mat[0].length];
         for (int i = 0; i < mat.length ; i++) {
         	for (int j = 0; j < mat[i].length ; j++) {
         		if(mat[i][j] == 0){
-        			//清除对应的每一行
+        			//将标记矩阵中对应的那一行给置为1
         			for (int k = 0; k < mat[i].length; k++) {
-        				mat[i][k] = 0;
+        				matFlag[i][k] = 1;
         			}
-        			//清除对应的每一列
+        			//将标记矩阵中对应的那一列给置为1
         			for (int m = 0; m < mat.length; m++) {
-        				mat[m][j] = 0;
+                        matFlag[m][j] = 1;
         			}
         		}
         	}
+        }
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                if(matFlag[i][j] == 1){
+                    mat[i][j] = 0;
+                }
+            }
         }
         return mat;
     }

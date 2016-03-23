@@ -1,11 +1,11 @@
 package _02_LinkedList;
 
-class ListNode {
+public class ListNode {
 	ListNode next = null;
-	int data;
+	int val;
 
-	public ListNode (int data) {
-		this.data = data;
+	public ListNode (int val) {
+		this.val = val;
 	}
 
 	public void appendTrail (int d){
@@ -15,5 +15,20 @@ class ListNode {
 			n = n.next;
 		}
 		n.next = end;
+	}
+
+	public void appendNodeToTrail(ListNode a){
+        ListNode n = this;
+        while(n.next != null){
+            n = n.next;
+        }
+        n.next = a;
+    }
+
+	public ListNode insert(int val){
+		ListNode next = this.next;
+		this.next = new ListNode(val);
+		this.next.next = next;
+		return this;
 	}
 }

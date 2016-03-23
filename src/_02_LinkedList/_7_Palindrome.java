@@ -13,7 +13,7 @@ public class ListNode {
 // 思路：
 // 遍历列表且将所有的数存到数组里
 // 对数组进行对半比对，若不相同，则直接返回false
-public class Palindrome {
+public class _7_Palindrome {
     public boolean isPalindrome(ListNode pHead) {
     	//其实这里还是用列表比较好，这样不管多长都可以判断
         /*int[] arrValue = new int[400];
@@ -46,6 +46,10 @@ public class Palindrome {
         	}
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
 

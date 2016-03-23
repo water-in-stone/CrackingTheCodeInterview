@@ -11,7 +11,7 @@ public class _2_1_Delete {
 	 * @param  pNode [ListNode]
 	 * @return       [false when pNode is the last ListNode]
 	 */
-	public boolean removeNode(ListNode pNode) {
+	public static boolean removeNode(ListNode pNode) {
         ListNode next = pNode.next;
         pNode = next;
         if (pNode == null) {

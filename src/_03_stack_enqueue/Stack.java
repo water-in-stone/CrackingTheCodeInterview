@@ -3,6 +3,7 @@ package _03_stack_enqueue;
 /**
  * Created by Young on 2016/3/24.
  * wang645788@gmail.com
+ *
  */
 class Stack {
     Node top;//维护一个栈顶元素即可,是一个指向栈底的链表头

@@ -24,7 +24,7 @@ public class _02_StackWithMin2 extends Stack{
 		} else if (val >= stackMin.peek()){
 			super.push(val);
 		}*/
-
+		
         if (val <= min()) {
             stackMin.push(val);
         }
@@ -32,6 +32,7 @@ public class _02_StackWithMin2 extends Stack{
 	}
 
 	public int pop(){
+
         //可以利用父类的pop方法的
 		/*if (top == null) {
 			return Integer.MAX_VALUE;
@@ -42,6 +43,7 @@ public class _02_StackWithMin2 extends Stack{
 		}
         top = top.next;
 		return val;*/
+
         int val = super.pop();
         if (val == min()) {
             stackMin.pop();

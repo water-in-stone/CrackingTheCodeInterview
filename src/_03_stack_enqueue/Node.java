@@ -4,10 +4,17 @@ public class Node<Object> {
 	//这里的节点只有next，构建队列和栈时要考虑到这一点
 	Node next = null;
 	int val;
+    int time;//时间戳，记录
 
 	public Node(int val) {
 		this.val = val;
+		this.time = 0;
 	}
+
+	public Node(int val, int time){
+        this.val = val;
+        this.time = time;
+    }
 
 	public void appendTrail (int d){
 		Node end = new Node<>(d);
@@ -32,4 +39,8 @@ public class Node<Object> {
 		this.next.next = next;
 		return this;
 	}
+
+    public int getTime(){
+        return this.time;
+    }
 }

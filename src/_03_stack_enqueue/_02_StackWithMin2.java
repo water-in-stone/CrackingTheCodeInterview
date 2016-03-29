@@ -32,6 +32,7 @@ public class _02_StackWithMin2 extends Stack{
 	}
 
 	public int pop(){
+		
 
         //可以利用父类的pop方法的
 		/*if (top == null) {

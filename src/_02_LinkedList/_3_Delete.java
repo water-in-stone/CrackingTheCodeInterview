@@ -12,13 +12,14 @@ public class _3_Delete {
 	 * @return       [false when pNode is the last ListNode]
 	 */
 	public static boolean removeNode(ListNode pNode) {
-        ListNode next = pNode.next;
-        pNode = next;
-        if (pNode == null) {
-        	return false;
-        } else {
-        	return true;
+        if (pNode == null || pNode.next == null) {
+            return false;
         }
+        //将当前元素的值用它的后继来替代
+        ListNode next = pNode.next;
+        pNode.val = next.val;
+        pNode.next = next.next;
+        return true;
     }
 
     public static void main(String[] args) {

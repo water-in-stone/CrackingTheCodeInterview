@@ -1,11 +1,13 @@
 package _03_stack_enqueue;
 
+import java.util.*;
+
 /**
  * Created by Young on 2016/3/24.
  * wang645788@gmail.com
  *
  */
-class Stack {
+class Stack<Integer> {
     Node top;//维护一个栈顶元素即可,是一个指向栈底的链表头
 
     //push的元素的类型不定
@@ -17,7 +19,7 @@ class Stack {
 
     public int pop(){
     	if (top == null) {
-    		return Integer.MAX_VALUE;
+    		return java.lang.Integer.MAX_VALUE;
     	} else {
             int val = top.val;
     		top = top.next;

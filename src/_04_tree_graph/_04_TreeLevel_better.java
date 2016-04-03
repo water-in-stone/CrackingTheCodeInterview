@@ -9,9 +9,9 @@ import java.util.LinkedList;
 public class _04_TreeLevel_better {
 
     ListNode head = new ListNode(-1);
-//    ListNode p = head.next; 这里依然是把p给预先保存起来，关键在p是一个确定的被初始化的节点
+//    ListNode p = head.next; 这里依然是把p给预先保存起来，
+//    关键在p是一个确定的被初始化的节点
     ListNode p = head;
-
     /**
      * 1、还是递归，左子树中符合要求深度的节点 + 左子树中符合要求深度的节点
      * 2、在方法之外定义好ListNode

@@ -65,11 +65,10 @@ public class _04_TreeLevel {
     }
 
     public static void main(String[] args) {
-        TreeNode test = new TreeNode(1);
-        test.left = new TreeNode(2);
-        test.right = new TreeNode(3);
-        test.right.left = new TreeNode(4);
-        test.right.right = new TreeNode(5);
-        System.out.println(getTreeLevel(test, 2));
+        Integer i1 =127, i2 = 127,i3 = 128,i4 = 128;
+        System.out.println(i1 ==i2);
+        System.out.println(i1.equals(i2));
+        System.out.println(i3 == i4);
+        System.out.println(i3.equals(i4));
     }
 }

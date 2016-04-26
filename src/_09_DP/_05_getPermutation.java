@@ -1,4 +1,4 @@
- package _09_DP;
+package _09_DP;
 import java.util.*;
 
 public class _05_getPermutation{
@@ -12,7 +12,15 @@ public class _05_getPermutation{
         int length = A.length();
         boolean[] isVisited = new boolean[length];
         permutation(result, A, 0, "", isVisited);
-        System.out.println(result);
+        //集合的排序,自定义一个排序函数
+        Collections.sort(result, new Comparator<String>() {
+ 
+            @Override
+            public int compare(String o1, String o2) {
+                // TODO Auto-generated method stub
+                return o2.compareTo(o1);
+            }
+        });
         return result;
     }
 

@@ -36,7 +36,7 @@ public class _05_getPermutation{
     			if (!isVisited[i]) {
     				isVisited[i] = true;
                     String nextStr = str + A.charAt(i);
-    				permutation(result, A, cur + 1, nextStr , isVisited);
+    				permutation(result, A, cur + 1, nextStr, isVisited);
     				isVisited[i] = false;
     			}
     		}

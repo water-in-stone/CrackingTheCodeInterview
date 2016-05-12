@@ -1,6 +1,10 @@
 package _05_bit_operation;
 import java.util.*;
 
+/**
+ * solve it with force, but we could solve it
+ * when we look the constitute of number
+ */
 public class _03_getCloseNumber{
 
 	public static void main(String[] args) {

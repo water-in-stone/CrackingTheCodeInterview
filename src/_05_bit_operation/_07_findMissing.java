@@ -3,9 +3,6 @@ package _05_bit_operation;
 import java.util.*;
 
 /**
- * 粗暴法
- * 1、确定对应的像素点在数组中的位置
- * 2、将所有的比特放到ArrayList中，然后直接修改
  * Created by Young on 2016/5/12.
  * wang645788@gmail.com
  */

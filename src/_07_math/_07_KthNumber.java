@@ -19,7 +19,7 @@ public class _07_KthNumber {
         sc.close();
     }
 
-    /*
+    /**
      * 时间复杂度O(N),3个素数因子3、5、7分为三个队列q3,q5,q7，其中最初存放3，5，7
      * 之后每次添加找到三个队列头中最小的数，起初为3，将3移出队列q3后，在q3添加3*3，在q5添加3*5,q7中添加3*7
      * 此时可知q3{3*3},q5{5,3*5},q7{7,3*7}
@@ -32,9 +32,9 @@ public class _07_KthNumber {
             return 0;
         }
         int val = 0;
-        Queue<Integer> q3 = new LinkedList<Integer>();
-        Queue<Integer> q5 = new LinkedList<Integer>();
-        Queue<Integer> q7 = new LinkedList<Integer>();
+        Queue<Integer> q3 = new LinkedList<>();
+        Queue<Integer> q5 = new LinkedList<>();
+        Queue<Integer> q7 = new LinkedList<>();
         q3.add(1);
         for(int i = 0 ; i <= k; i++){
             int v3 = q3.size() > 0? q3.peek() : Integer.MAX_VALUE;

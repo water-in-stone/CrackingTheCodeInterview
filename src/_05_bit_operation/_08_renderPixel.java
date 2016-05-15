@@ -16,7 +16,7 @@ public class _08_renderPixel {
         while(sc.hasNext()){
             int start = sc.nextInt();
             int end = sc.nextInt();
-            arrPixel = renderPixel(arrPixel, start, end);
+            renderPixel(arrPixel, start, end);
             for(int i : arrPixel){
             	System.out.println(i);
             }

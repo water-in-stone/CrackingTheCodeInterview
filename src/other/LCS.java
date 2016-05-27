@@ -2,7 +2,7 @@ package other;
 import java.util.*;
 
 /**
- * simple way to solve this problem
+ * simple way to solve this problem, but it is not elegant
  */
 
 public class LCS{
